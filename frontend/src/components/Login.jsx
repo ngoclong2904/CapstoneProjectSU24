@@ -1,6 +1,6 @@
 import React, { useRef } from "react"
 import { Link } from "react-router-dom"
-import login from "/src/assets/login.svg"
+import login from "/src/assets/login.png"
 import square from "/src/assets/Square.png"
 import or from "/src/assets/or.svg"
 import google from "/src/assets/Social media logo.svg"
@@ -21,7 +21,7 @@ const Login = () => {
 		console.log("Google sign in")
 	}
 
-	function handleShowPasssword() {
+	function handleShowPassword() {
 		const type = passwordRef.current.type
 		if (type === "password") {
 			passwordRef.current.type = "text"
@@ -78,7 +78,7 @@ const Login = () => {
 								<label htmlFor='password' className='text-[#666666]'>
 									Your password
 								</label>
-								<div className='text-[#666666] flex gap-2 cursor-pointer' onClick={handleShowPasssword}>
+								<div className='text-[#666666] flex gap-2 cursor-pointer' onClick={handleShowPassword}>
 									<img src={hide} alt='' />
 									Hide
 								</div>
