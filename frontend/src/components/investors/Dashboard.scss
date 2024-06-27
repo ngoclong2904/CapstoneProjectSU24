@@ -1,0 +1,9 @@
+#top-bar {
+	.right-side {
+		& > * {
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}
