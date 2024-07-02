@@ -1,14 +1,12 @@
 import { useState } from "react"
 import Sidebar from "./components/Sidebar"
-import Dashboard from "./components/investors/Dashboard"
+import { Outlet } from "react-router-dom"
 
 function App() {
-	const [count, setCount] = useState(0)
-
 	return (
 		<div className='h-full flex'>
 			<Sidebar />
-			<Dashboard />
+			<Outlet />
 		</div>
 	)
 }
