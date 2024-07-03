@@ -1,5 +1,5 @@
 import React, { useRef } from "react"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import login from "/src/assets/login.png"
 import square from "/src/assets/Square.png"
 import or from "/src/assets/or.svg"
@@ -10,11 +10,21 @@ const Login = () => {
 	const usernameRef = useRef(null)
 	const passwordRef = useRef(null)
 
+	const navigate = useNavigate()
+
+	function saveToken(username, password) {
+		const token = { username, password }
+		localStorage.setItem("token", token)
+	}
+
 	function handleSignIn() {
 		console.log("Sign in")
 		const username = usernameRef.current.value
 		const password = passwordRef.current.value
-		console.log(username, password)
+
+		// login successfully
+		saveToken(username, password)
+		navigate("/")
 	}
 
 	function handleGoogleSignIn() {
@@ -69,7 +79,7 @@ const Login = () => {
 							<input
 								type='text'
 								id='username'
-								className='block w-full h-[56px] border border-[#666666] rounded-xl mt-1'
+								className='block w-full h-[56px] border border-[#666666] rounded-xl mt-1 px-6'
 								ref={usernameRef}
 							/>
 						</div>
@@ -86,7 +96,7 @@ const Login = () => {
 							<input
 								type='password'
 								id='password'
-								className='block w-full h-[56px] border border-[#666666] rounded-xl mt-1'
+								className='block w-full h-[56px] border border-[#666666] rounded-xl mt-1 px-6'
 								ref={passwordRef}
 							/>
 						</div>

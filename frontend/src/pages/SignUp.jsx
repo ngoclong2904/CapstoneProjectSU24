@@ -57,7 +57,7 @@ const SignUp = () => {
 						<input
 							type='text'
 							id='firstName'
-							className='block w-full h-[56px] border border-[#666666] rounded-xl mt-1'
+							className='block w-full h-[56px] border border-[#666666] rounded-xl mt-1 px-6'
 							ref={firstNameRef}
 						/>
 					</div>
@@ -68,7 +68,7 @@ const SignUp = () => {
 						<input
 							type='text'
 							id='lastName'
-							className='block w-full h-[56px] border border-[#666666] rounded-xl mt-1'
+							className='block w-full h-[56px] border border-[#666666] rounded-xl mt-1 px-6'
 							ref={lastNameRef}
 						/>
 					</div>
@@ -80,7 +80,7 @@ const SignUp = () => {
 					<input
 						type='text'
 						id='email'
-						className='block w-full h-[56px] border border-[#666666] rounded-xl mt-1'
+						className='block w-full h-[56px] border border-[#666666] rounded-xl mt-1 px-6'
 						ref={emailRef}
 					/>
 				</div>
@@ -92,7 +92,7 @@ const SignUp = () => {
 						<input
 							type='password'
 							id='password'
-							className='block w-full h-[56px] border border-[#666666] rounded-xl mt-1'
+							className='block w-full h-[56px] border border-[#666666] rounded-xl mt-1 px-6'
 							ref={passwordRef}
 						/>
 					</div>
@@ -103,7 +103,7 @@ const SignUp = () => {
 						<input
 							type='password'
 							id='confirm'
-							className='block w-full h-[56px] border border-[#666666] rounded-xl mt-1'
+							className='block w-full h-[56px] border border-[#666666] rounded-xl mt-1 px-6'
 							ref={confirmRef}
 						/>
 					</div>
