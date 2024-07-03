@@ -23,61 +23,61 @@ const Sidebar = () => {
 					<h1>Just Home</h1>
 				</div>
 				<ul className='mt-[2rem] flex flex-col gap-2 justify-center px-[2rem]'>
-					<NavLink to={"/"} className='px-10 flex items-center gap-2'>
+					<NavLink to={"/investor/"} className='px-10 flex items-center gap-2'>
 						<div className='w-[30px]'>
 							<img src={dashboard} alt='' />
 						</div>
 						<p>Dashboard</p>
 					</NavLink>
-					<NavLink to={"/du-an"} className='px-10 flex items-center gap-2'>
+					<NavLink to={"/investor/du-an"} className='px-10 flex items-center gap-2'>
 						<div className='w-[30px]'>
 							<img src={du_an} alt='' />
 						</div>
 						<p>Dự án</p>
 					</NavLink>
-					<NavLink to={"/dot-mo-ban"} className='px-10 flex items-center gap-2'>
+					<NavLink to={"/investor/dot-mo-ban"} className='px-10 flex items-center gap-2'>
 						<div className='w-[30px]'>
 							<img src={moban} alt='' />
 						</div>
 						<p>Đợt mở bán</p>
 					</NavLink>
-					<NavLink to={"/lich-thanh-toan"} className='px-10 flex items-center gap-2'>
+					<NavLink to={"/investor/lich-thanh-toan"} className='px-10 flex items-center gap-2'>
 						<div className='w-[30px]'>
 							<img src={lich} alt='' />
 						</div>
 						<p>Lịch thanh toán</p>
 					</NavLink>
-					<NavLink to={"/tien-do"} className='px-10 flex items-center gap-2'>
+					<NavLink to={"/investor/tien-do"} className='px-10 flex items-center gap-2'>
 						<div className='w-[30px]'>
 							<img src={tiendo} alt='' />
 						</div>
 						<p>Thay đổi tiến độ</p>
 					</NavLink>
-					<NavLink to={"/bieu-mau"} className='px-10 flex items-center gap-2'>
+					<NavLink to={"/investor/bieu-mau"} className='px-10 flex items-center gap-2'>
 						<div className='w-[30px]'>
 							<img src={bieumau} alt='' />
 						</div>
 						<p>Biểu mẫu</p>
 					</NavLink>
-					<NavLink to={"/khuyen-mai"} className='px-10 flex items-center gap-2'>
+					<NavLink to={"/investor/khuyen-mai"} className='px-10 flex items-center gap-2'>
 						<div className='w-[30px]'>
 							<img src={khuyenmai} alt='' />
 						</div>
 						<p>Khuyến mãi</p>
 					</NavLink>
-					<NavLink to={"/chinh-sach"} className='px-10 flex items-center gap-2'>
+					<NavLink to={"/investor/chinh-sach"} className='px-10 flex items-center gap-2'>
 						<div className='w-[30px]'>
 							<img src={chinhsach} alt='' />
 						</div>
 						<p>Chính sách bán hàng</p>
 					</NavLink>
-					<NavLink to={"/khach-hang"} className='px-10 flex items-center gap-2'>
+					<NavLink to={"/investor/khach-hang"} className='px-10 flex items-center gap-2'>
 						<div className='w-[30px]'>
 							<img src={khach} alt='' />
 						</div>
 						<p>Khách hàng</p>
 					</NavLink>
-					<NavLink to={"/nhan-vien"} className='px-10 flex items-center gap-2'>
+					<NavLink to={"/investor/nhan-vien"} className='px-10 flex items-center gap-2'>
 						<div className='w-[30px]'>
 							<img src={nv} alt='' />
 						</div>

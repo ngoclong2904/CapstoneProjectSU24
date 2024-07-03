@@ -1,25 +1,25 @@
-import { useEffect, useState } from "react"
-import Sidebar from "./components/Sidebar"
-import { Outlet, useNavigate } from "react-router-dom"
+import { useEffect } from "react"
+import { useNavigate } from "react-router-dom"
+import Investor from "./pages/Investor"
+import { GridLoader } from "react-spinners"
 
 function App() {
 	const navigate = useNavigate()
 
-	function authenticationCheck() {
-		const token = localStorage.getItem("token")
-		if (!token) {
-			navigate("/login")
-		}
-	}
+	const isAuthenticated = localStorage.getItem("token")
 
 	useEffect(() => {
-		authenticationCheck()
+		if (isAuthenticated) {
+			navigate("/investor")
+		} else {
+			navigate("/login")
+		}
 	}, [])
 
 	return (
-		<div className='h-full flex'>
-			<Sidebar />
-			<Outlet />
+		<div className='w-full h-full flex items-center justify-center flex-col'>
+			<GridLoader size={40} color='#bae2fd' />
+			<p className='mt-6'>Please wait a minute</p>
 		</div>
 	)
 }

@@ -12,11 +12,16 @@ import ChinhSach from "./src/pages/ChinhSach"
 import KhachHang from "./src/pages/KhachHang"
 import NhanVien from "./src/pages/NhanVien"
 import LichThanhToan from "./src/pages/LichThanhToan"
+import Investor from "./src/pages/Investor"
 
 const router = createBrowserRouter([
 	{
 		path: "/",
 		element: <App />,
+	},
+	{
+		path: "/investor",
+		element: <Investor />,
 		children: [
 			{
 				index: true,
