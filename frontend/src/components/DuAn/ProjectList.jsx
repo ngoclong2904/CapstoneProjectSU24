@@ -4,23 +4,29 @@ import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, Tabl
 const ProjectList = () => {
 	return (
 		<div>
-			<p className='text-muted-foreground'>asdf</p>
-			<Table>
-				<TableCaption>A list of your recent invoices.</TableCaption>
+			<Table className='mt-8'>
 				<TableHeader>
 					<TableRow className='font-[500]'>
-						<TableHead className='w-[100px]'>Invoice</TableHead>
-						<TableHead>Status</TableHead>
-						<TableHead>Method</TableHead>
-						<TableHead className='text-right'>Amount</TableHead>
+						<TableHead className='w-[100px] text-center'>STT</TableHead>
+						<TableHead>Ngaỳ đăng</TableHead>
+						<TableHead>Tên dự án</TableHead>
+						<TableHead>Loại dự án</TableHead>
+						<TableHead>Địa chỉ</TableHead>
+						<TableHead className='text-center'>Staff</TableHead>
+						<TableHead className='text-center'>Status</TableHead>
+						<TableHead className='text-center'>Action</TableHead>
 					</TableRow>
 				</TableHeader>
 				<TableBody>
 					<TableRow>
-						<TableCell className='font-medium'>INV001</TableCell>
-						<TableCell>Paid</TableCell>
-						<TableCell>Credit Card</TableCell>
-						<TableCell className='text-right'>$250.00</TableCell>
+						<TableCell className='text-center'>1</TableCell>
+						<TableCell>29/01/2023</TableCell>
+						<TableCell>The Beverly - Vinhomes Ocean Park</TableCell>
+						<TableCell>Căn hộ chung cư</TableCell>
+						<TableCell>Đường Nguyễn Tất Thành, Phường Hòa Hiệp Nam, Quận Liên Chiểu, Đà Nẵng.</TableCell>
+						<TableCell className='text-center'>Kim Huyền Linh</TableCell>
+						<TableCell className='text-center'>Active</TableCell>
+						<TableCell className='text-center'>...</TableCell>
 					</TableRow>
 				</TableBody>
 			</Table>
