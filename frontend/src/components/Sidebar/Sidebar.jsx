@@ -23,7 +23,7 @@ const Sidebar = () => {
 					<h1>Just Home</h1>
 				</div>
 				<ul className='mt-[2rem] flex flex-col gap-2 justify-center px-[2rem]'>
-					<NavLink to={"/investor/"} className='px-10 flex items-center gap-2'>
+					<NavLink to={"/investor/dashboard"} className='px-10 flex items-center gap-2'>
 						<div className='w-[30px]'>
 							<img src={dashboard} alt='' />
 						</div>

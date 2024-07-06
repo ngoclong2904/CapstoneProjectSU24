@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"baseUrl": "./",
+		"paths": {
+			"@/*": ["./*"],
+			"@components/*": ["src/components/*"],
+			"@styles/*": ["src/styles/*"],
+			"@utils/*": ["src/utils/*"],
+			"@hooks/*": ["src/hooks/*"],
+			"@pages/*": ["src/pages/*"],
+			"@assets/*": ["src/assets/*"]
+		},
+		"jsx": "react-jsx",
+		"module": "commonjs",
+		"target": "es6",
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"lib": ["dom", "es6"]
+	},
+	"include": ["src"]
+}

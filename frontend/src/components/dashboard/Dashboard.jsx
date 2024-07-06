@@ -3,34 +3,17 @@ import { CChart } from "@coreui/react-chartjs"
 
 import UpTrend from "/src/assets/uptrend.png"
 import DownTrend from "/src/assets/downtrend.png"
-import notification from "/src/assets/notification.png"
-import user from "/src/assets/user.png"
-import arrowDown from "/src/assets/arrow_down.jpg"
-import search from "/src/assets/search.png"
 
 import "./Dashboard.scss"
-import DashboardSummaryPanel from "../components/dashboard/DashboardSummaryPanel"
+import DashboardSummaryPanel from "./DashboardSummaryPanel"
 
 const Dashboard = () => {
 	return (
-		<div id='dashboard' className='flex-1 p-8 px-[4rem]'>
-			<div id='top-bar' className='flex justify-between'>
-				<div className='relative'>
-					<img src={search} alt='' className='absolute top-[8px] left-[8px]' />
-					<input type='text' placeholder='Search here' className='bg-gray-200 rounded-xl py-1 px-6 pl-8' />
-				</div>
-				<div className='right-side flex gap-8 items-center'>
-					<p>English</p>
-					<img src={notification} alt='' className='w-[30px] h-[30px]' />
-					<div className='flex items-center gap-1'>
-						<img src={user} alt='' />
-						<img src={arrowDown} alt='' className='w-[20px] h-[20px]' />
-					</div>
-				</div>
-			</div>
-			<div className='mt-8'>
+		<div id='dashboard'>
+			<div>
 				<h3>Welcome investor,</h3>
 				<p className='text-gray'>Dashboard</p>
+				<div className='h-[1px] bg-[#bec6c9] w-[98%] mx-auto my-4'>&nbsp;</div>
 			</div>
 
 			<ul className='mt-8 grid grid-cols-4 gap-4'>

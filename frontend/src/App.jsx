@@ -10,7 +10,7 @@ function App() {
 
 	useEffect(() => {
 		if (isAuthenticated) {
-			navigate("/investor")
+			navigate("/investor/dashboard")
 		} else {
 			navigate("/login")
 		}

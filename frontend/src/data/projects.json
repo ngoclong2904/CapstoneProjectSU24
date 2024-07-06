@@ -1,0 +1,713 @@
+[
+	{
+		"projectID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+		"projectName": "string",
+		"commericalName": "string",
+		"shortName": "string",
+		"typeOfProject": "string",
+		"address": "string",
+		"commune": "string",
+		"district": "string",
+		"depositPrice": 0,
+		"summary": "string",
+		"licenseNo": 0,
+		"dateOfIssue": "2024-07-06T09:27:38.891Z",
+		"campusArea": "string",
+		"placeofIssue": "string",
+		"code": "string",
+		"image": "string",
+		"status": "string",
+		"salespolicies": [
+			{
+				"salesPolicyID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+				"salesPolicyType": "string",
+				"expressTime": "2024-07-06T09:27:38.891Z",
+				"peopleApplied": "string",
+				"status": true,
+				"projectID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+				"project": "string",
+				"paymentProcesses": [
+					{
+						"paymentProcessID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+						"paymentProcessName": "string",
+						"discount": 0,
+						"totalPrice": 0,
+						"salesPolicyID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+						"salespolicy": "string",
+						"contracts": [
+							{
+								"contractID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+								"contractName": "string",
+								"contractType": "string",
+								"createdTime": "2024-07-06T09:27:38.891Z",
+								"updatedTime": "2024-07-06T09:27:38.891Z",
+								"dateSigned": "2024-07-06T09:27:38.891Z",
+								"expiredTime": "2024-07-06T09:27:38.891Z",
+								"totalPrice": 0,
+								"description": "string",
+								"contractFile": "string",
+								"status": "string",
+								"bookingID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+								"booking": {
+									"bookingID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+									"reservationDate": "2024-07-06T09:27:38.891Z",
+									"depositedTimed": "2024-07-06T09:27:38.891Z",
+									"depositedPrice": 0,
+									"createdTime": "2024-07-06T09:27:38.891Z",
+									"updatedTime": "2024-07-06T09:27:38.891Z",
+									"bookingFile": "string",
+									"note": "string",
+									"status": "string",
+									"payments": [
+										{
+											"paymentID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+											"amount": 0,
+											"content": "string",
+											"createdTime": "2024-07-06T09:27:38.891Z",
+											"paymentTime": "2024-07-06T09:27:38.891Z",
+											"status": true,
+											"paymentTypeID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+											"paymentType": {
+												"paymentTypeID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+												"paymentName": "string",
+												"payments": ["string"]
+											},
+											"bookingID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+											"booking": "string",
+											"contractPaymentDetailID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+											"contractPaymentDetail": {
+												"contractPaymentDetailID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+												"detailName": "string",
+												"createdTime": "2024-07-06T09:27:38.891Z",
+												"paymentRate": 0,
+												"amountpaid": 0,
+												"taxRate": 0,
+												"moneyTax": 0,
+												"moneyReceived": 0,
+												"numberDayLate": 0,
+												"interestRate": 0,
+												"moneyInterestRate": 0,
+												"moneyExist": 0,
+												"description": "string",
+												"payments": ["string"],
+												"contractID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+												"contract": "string"
+											}
+										}
+									],
+									"propertyID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+									"property": {
+										"propertyID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+										"propertyName": "string",
+										"block": "string",
+										"floor": 0,
+										"sizeArea": 0,
+										"bedRoom": 0,
+										"bathRoom": 0,
+										"livingRoom": 0,
+										"view": "string",
+										"initialPrice": 0,
+										"discount": 0,
+										"moneyTax": 0,
+										"maintenanceCost": 0,
+										"totalPrice": 0,
+										"image": "string",
+										"status": "string",
+										"comments": [
+											{
+												"commentId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+												"content": "string",
+												"createTime": "2024-07-06T09:27:38.891Z",
+												"updateTime": "2024-07-06T09:27:38.891Z",
+												"status": true,
+												"propertiesID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+												"property": "string",
+												"customerID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+												"customer": {
+													"customerID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+													"firstName": "string",
+													"lastName": "string",
+													"dateOfBirth": "2024-07-06T09:27:38.891Z",
+													"personalEmail": "string",
+													"phoneNumber": "string",
+													"identityCardNumber": "string",
+													"nationality": "string",
+													"taxcode": "string",
+													"bankName": "string",
+													"bankNumber": 0,
+													"address": "string",
+													"status": true,
+													"accountID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+													"account": {
+														"accountID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+														"email": "string",
+														"password": "string",
+														"status": true,
+														"roleID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+														"role": {
+															"roleID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+															"roleName": "string",
+															"accounts": ["string"]
+														}
+													},
+													"bookings": ["string"],
+													"comments": ["string"]
+												}
+											}
+										],
+										"propertyTypeID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+										"propertyType": {
+											"propertyTypeID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+											"typeName": "string",
+											"promotionDetails": [
+												{
+													"promotionDetaiID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+													"description": "string",
+													"promotionType": "string",
+													"discountPercent": 0,
+													"discountAmount": 0,
+													"amount": 0,
+													"promotionID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+													"promotion": "string",
+													"propertiesTypeID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+													"propertiesType": "string"
+												}
+											],
+											"properties": ["string"]
+										},
+										"openForSaleDetails": [
+											{
+												"openForSaleDetailID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+												"price": 0,
+												"discount": 0,
+												"note": "string",
+												"openingForSaleID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+												"openingForSale": "string",
+												"propertiesID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+												"property": "string"
+											}
+										],
+										"projectID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+										"project": "string",
+										"bookings": ["string"]
+									},
+									"openingForSaleID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+									"openingForSale": {
+										"openingForSaleID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+										"descriptionName": "string",
+										"dateStart": "2024-07-06T09:27:38.892Z",
+										"dateEnd": "2024-07-06T09:27:38.892Z",
+										"reservationTime": "string",
+										"description": "string",
+										"status": true,
+										"bookings": ["string"],
+										"openForSaleDetails": [
+											{
+												"openForSaleDetailID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+												"price": 0,
+												"discount": 0,
+												"note": "string",
+												"openingForSaleID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+												"openingForSale": "string",
+												"propertiesID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+												"property": "string"
+											}
+										],
+										"projectID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+										"project": "string"
+									},
+									"projectID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+									"project": "string",
+									"customerID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+									"customer": {
+										"customerID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+										"firstName": "string",
+										"lastName": "string",
+										"dateOfBirth": "2024-07-06T09:27:38.892Z",
+										"personalEmail": "string",
+										"phoneNumber": "string",
+										"identityCardNumber": "string",
+										"nationality": "string",
+										"taxcode": "string",
+										"bankName": "string",
+										"bankNumber": 0,
+										"address": "string",
+										"status": true,
+										"accountID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+										"account": {
+											"accountID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+											"email": "string",
+											"password": "string",
+											"status": true,
+											"roleID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+											"role": {
+												"roleID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+												"roleName": "string",
+												"accounts": ["string"]
+											}
+										},
+										"bookings": ["string"],
+										"comments": ["string"]
+									},
+									"staffID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+									"staff": {
+										"staffID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+										"name": "string",
+										"personalEmail": "string",
+										"dateOfBirth": "2024-07-06T09:27:38.892Z",
+										"image": "string",
+										"imagesignature": "string",
+										"identityCardNumber": "string",
+										"sex": "string",
+										"nationality": "string",
+										"placeoforigin": "string",
+										"placeOfresidence": "string",
+										"taxcode": "string",
+										"bankName": "string",
+										"bankNumber": 0,
+										"status": true,
+										"accountID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+										"account": {
+											"accountID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+											"email": "string",
+											"password": "string",
+											"status": true,
+											"roleID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+											"role": {
+												"roleID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+												"roleName": "string",
+												"accounts": ["string"]
+											}
+										},
+										"bookings": ["string"]
+									}
+								},
+								"contractPaymentDetails": [
+									{
+										"contractPaymentDetailID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+										"detailName": "string",
+										"createdTime": "2024-07-06T09:27:38.892Z",
+										"paymentRate": 0,
+										"amountpaid": 0,
+										"taxRate": 0,
+										"moneyTax": 0,
+										"moneyReceived": 0,
+										"numberDayLate": 0,
+										"interestRate": 0,
+										"moneyInterestRate": 0,
+										"moneyExist": 0,
+										"description": "string",
+										"payments": ["string"],
+										"contractID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+										"contract": "string"
+									}
+								],
+								"paymentProcessID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+								"paymentProcess": "string"
+							}
+						],
+						"paymentProcessDetails": [
+							{
+								"paymentProcessDetailID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+								"detailName": "string",
+								"periodType": "string",
+								"period": 0,
+								"paymentRate": 0,
+								"paymentType": "string",
+								"amount": 0,
+								"note": "string",
+								"paymentProcessID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+								"paymentProcess": "string"
+							}
+						]
+					}
+				],
+				"promotions": [
+					{
+						"promotionID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+						"promotionName": "string",
+						"description": "string",
+						"startDate": "2024-07-06T09:27:38.892Z",
+						"endDate": "2024-07-06T09:27:38.892Z",
+						"status": true,
+						"salesPolicyID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+						"salespolicy": "string",
+						"promotionDetails": [
+							{
+								"promotionDetaiID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+								"description": "string",
+								"promotionType": "string",
+								"discountPercent": 0,
+								"discountAmount": 0,
+								"amount": 0,
+								"promotionID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+								"promotion": "string",
+								"propertiesTypeID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+								"propertiesType": "string"
+							}
+						]
+					}
+				]
+			}
+		],
+		"bookings": [
+			{
+				"bookingID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+				"reservationDate": "2024-07-06T09:27:38.892Z",
+				"depositedTimed": "2024-07-06T09:27:38.892Z",
+				"depositedPrice": 0,
+				"createdTime": "2024-07-06T09:27:38.892Z",
+				"updatedTime": "2024-07-06T09:27:38.892Z",
+				"bookingFile": "string",
+				"note": "string",
+				"status": "string",
+				"payments": [
+					{
+						"paymentID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+						"amount": 0,
+						"content": "string",
+						"createdTime": "2024-07-06T09:27:38.892Z",
+						"paymentTime": "2024-07-06T09:27:38.892Z",
+						"status": true,
+						"paymentTypeID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+						"paymentType": {
+							"paymentTypeID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+							"paymentName": "string",
+							"payments": ["string"]
+						},
+						"bookingID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+						"booking": "string",
+						"contractPaymentDetailID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+						"contractPaymentDetail": {
+							"contractPaymentDetailID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+							"detailName": "string",
+							"createdTime": "2024-07-06T09:27:38.892Z",
+							"paymentRate": 0,
+							"amountpaid": 0,
+							"taxRate": 0,
+							"moneyTax": 0,
+							"moneyReceived": 0,
+							"numberDayLate": 0,
+							"interestRate": 0,
+							"moneyInterestRate": 0,
+							"moneyExist": 0,
+							"description": "string",
+							"payments": ["string"],
+							"contractID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+							"contract": "string"
+						}
+					}
+				],
+				"propertyID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+				"property": {
+					"propertyID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+					"propertyName": "string",
+					"block": "string",
+					"floor": 0,
+					"sizeArea": 0,
+					"bedRoom": 0,
+					"bathRoom": 0,
+					"livingRoom": 0,
+					"view": "string",
+					"initialPrice": 0,
+					"discount": 0,
+					"moneyTax": 0,
+					"maintenanceCost": 0,
+					"totalPrice": 0,
+					"image": "string",
+					"status": "string",
+					"comments": [
+						{
+							"commentId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+							"content": "string",
+							"createTime": "2024-07-06T09:27:38.892Z",
+							"updateTime": "2024-07-06T09:27:38.892Z",
+							"status": true,
+							"propertiesID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+							"property": "string",
+							"customerID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+							"customer": {
+								"customerID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+								"firstName": "string",
+								"lastName": "string",
+								"dateOfBirth": "2024-07-06T09:27:38.892Z",
+								"personalEmail": "string",
+								"phoneNumber": "string",
+								"identityCardNumber": "string",
+								"nationality": "string",
+								"taxcode": "string",
+								"bankName": "string",
+								"bankNumber": 0,
+								"address": "string",
+								"status": true,
+								"accountID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+								"account": {
+									"accountID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+									"email": "string",
+									"password": "string",
+									"status": true,
+									"roleID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+									"role": {
+										"roleID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+										"roleName": "string",
+										"accounts": ["string"]
+									}
+								},
+								"bookings": ["string"],
+								"comments": ["string"]
+							}
+						}
+					],
+					"propertyTypeID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+					"propertyType": {
+						"propertyTypeID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+						"typeName": "string",
+						"promotionDetails": [
+							{
+								"promotionDetaiID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+								"description": "string",
+								"promotionType": "string",
+								"discountPercent": 0,
+								"discountAmount": 0,
+								"amount": 0,
+								"promotionID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+								"promotion": "string",
+								"propertiesTypeID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+								"propertiesType": "string"
+							}
+						],
+						"properties": ["string"]
+					},
+					"openForSaleDetails": [
+						{
+							"openForSaleDetailID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+							"price": 0,
+							"discount": 0,
+							"note": "string",
+							"openingForSaleID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+							"openingForSale": "string",
+							"propertiesID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+							"property": "string"
+						}
+					],
+					"projectID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+					"project": "string",
+					"bookings": ["string"]
+				},
+				"openingForSaleID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+				"openingForSale": {
+					"openingForSaleID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+					"descriptionName": "string",
+					"dateStart": "2024-07-06T09:27:38.892Z",
+					"dateEnd": "2024-07-06T09:27:38.892Z",
+					"reservationTime": "string",
+					"description": "string",
+					"status": true,
+					"bookings": ["string"],
+					"openForSaleDetails": [
+						{
+							"openForSaleDetailID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+							"price": 0,
+							"discount": 0,
+							"note": "string",
+							"openingForSaleID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+							"openingForSale": "string",
+							"propertiesID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+							"property": "string"
+						}
+					],
+					"projectID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+					"project": "string"
+				},
+				"projectID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+				"project": "string",
+				"customerID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+				"customer": {
+					"customerID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+					"firstName": "string",
+					"lastName": "string",
+					"dateOfBirth": "2024-07-06T09:27:38.892Z",
+					"personalEmail": "string",
+					"phoneNumber": "string",
+					"identityCardNumber": "string",
+					"nationality": "string",
+					"taxcode": "string",
+					"bankName": "string",
+					"bankNumber": 0,
+					"address": "string",
+					"status": true,
+					"accountID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+					"account": {
+						"accountID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+						"email": "string",
+						"password": "string",
+						"status": true,
+						"roleID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+						"role": {
+							"roleID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+							"roleName": "string",
+							"accounts": ["string"]
+						}
+					},
+					"bookings": ["string"],
+					"comments": ["string"]
+				},
+				"staffID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+				"staff": {
+					"staffID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+					"name": "string",
+					"personalEmail": "string",
+					"dateOfBirth": "2024-07-06T09:27:38.892Z",
+					"image": "string",
+					"imagesignature": "string",
+					"identityCardNumber": "string",
+					"sex": "string",
+					"nationality": "string",
+					"placeoforigin": "string",
+					"placeOfresidence": "string",
+					"taxcode": "string",
+					"bankName": "string",
+					"bankNumber": 0,
+					"status": true,
+					"accountID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+					"account": {
+						"accountID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+						"email": "string",
+						"password": "string",
+						"status": true,
+						"roleID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+						"role": {
+							"roleID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+							"roleName": "string",
+							"accounts": ["string"]
+						}
+					},
+					"bookings": ["string"]
+				}
+			}
+		],
+		"properties": [
+			{
+				"propertyID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+				"propertyName": "string",
+				"block": "string",
+				"floor": 0,
+				"sizeArea": 0,
+				"bedRoom": 0,
+				"bathRoom": 0,
+				"livingRoom": 0,
+				"view": "string",
+				"initialPrice": 0,
+				"discount": 0,
+				"moneyTax": 0,
+				"maintenanceCost": 0,
+				"totalPrice": 0,
+				"image": "string",
+				"status": "string",
+				"comments": [
+					{
+						"commentId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+						"content": "string",
+						"createTime": "2024-07-06T09:27:38.892Z",
+						"updateTime": "2024-07-06T09:27:38.892Z",
+						"status": true,
+						"propertiesID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+						"property": "string",
+						"customerID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+						"customer": {
+							"customerID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+							"firstName": "string",
+							"lastName": "string",
+							"dateOfBirth": "2024-07-06T09:27:38.892Z",
+							"personalEmail": "string",
+							"phoneNumber": "string",
+							"identityCardNumber": "string",
+							"nationality": "string",
+							"taxcode": "string",
+							"bankName": "string",
+							"bankNumber": 0,
+							"address": "string",
+							"status": true,
+							"accountID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+							"account": {
+								"accountID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+								"email": "string",
+								"password": "string",
+								"status": true,
+								"roleID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+								"role": {
+									"roleID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+									"roleName": "string",
+									"accounts": ["string"]
+								}
+							},
+							"bookings": ["string"],
+							"comments": ["string"]
+						}
+					}
+				],
+				"propertyTypeID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+				"propertyType": {
+					"propertyTypeID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+					"typeName": "string",
+					"promotionDetails": [
+						{
+							"promotionDetaiID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+							"description": "string",
+							"promotionType": "string",
+							"discountPercent": 0,
+							"discountAmount": 0,
+							"amount": 0,
+							"promotionID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+							"promotion": "string",
+							"propertiesTypeID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+							"propertiesType": "string"
+						}
+					],
+					"properties": ["string"]
+				},
+				"openForSaleDetails": [
+					{
+						"openForSaleDetailID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+						"price": 0,
+						"discount": 0,
+						"note": "string",
+						"openingForSaleID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+						"openingForSale": "string",
+						"propertiesID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+						"property": "string"
+					}
+				],
+				"projectID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+				"project": "string",
+				"bookings": ["string"]
+			}
+		],
+		"openingForSales": [
+			{
+				"openingForSaleID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+				"descriptionName": "string",
+				"dateStart": "2024-07-06T09:27:38.892Z",
+				"dateEnd": "2024-07-06T09:27:38.892Z",
+				"reservationTime": "string",
+				"description": "string",
+				"status": true,
+				"bookings": ["string"],
+				"openForSaleDetails": [
+					{
+						"openForSaleDetailID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+						"price": 0,
+						"discount": 0,
+						"note": "string",
+						"openingForSaleID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+						"openingForSale": "string",
+						"propertiesID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+						"property": "string"
+					}
+				],
+				"projectID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+				"project": "string"
+			}
+		]
+	}
+]
