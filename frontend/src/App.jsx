@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom"
 import Investor from "./pages/Investor"
 import { GridLoader } from "react-spinners"
 
+
 function App() {
 	const navigate = useNavigate()
 
