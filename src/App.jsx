@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 import { useNavigate } from "react-router-dom"
-import Investor from "./pages/Investor"
+import Investor from "./pages/investor/Investor"
 import { GridLoader } from "react-spinners"
 
 function App() {

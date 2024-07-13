@@ -145,3 +145,26 @@ h3 {
 .text-gray {
 	color: #9b9b9b;
 }
+
+.ant-menu-horizontal > .ant-menu-item,
+.ant-menu-horizontal > .ant-menu-submenu > .ant-menu-submenu-title {
+	color: #ffffff;
+}
+
+.ant-menu-horizontal > .ant-menu-item:hover,
+.ant-menu-horizontal > .ant-menu-submenu:hover,
+.ant-menu-horizontal > .ant-menu-item-active,
+.ant-menu-horizontal > .ant-menu-submenu-active,
+.ant-menu-horizontal > .ant-menu-item-open,
+.ant-menu-horizontal > .ant-menu-submenu-open,
+.ant-menu-horizontal > .ant-menu-item-selected,
+.ant-menu-horizontal > .ant-menu-submenu-selected {
+	color: #ffffff;
+	background-color: transparent;
+}
+.ant-form-item {
+	margin-bottom: 8px !important; /* Adjust the margin as needed */
+}
+.space-x-2 > * + * {
+	margin-left: 0.5rem;
+}
