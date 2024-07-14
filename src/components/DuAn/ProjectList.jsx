@@ -1,10 +1,16 @@
 import React, { useEffect, useState } from "react"
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { useOutletContext } from "react-router-dom"
+import plus from "../../assets/plus.png"
+import CustomModal from "@components/ModalHook/CustomModal"
+import ProjectForm from "@components/Form/ProjectForm"
+import useModalHook from "@components/ModalHook/useModalHook"
 
 const ProjectList = () => {
 	const [projects, setProjects] = useState([])
 	const [activeProjectIndex, setActiveProjectIndex] = useState(null)
+	const { showModal, modalProps, form } = useModalHook({ onSubmit: test })
+
 	const { setShowNavbar } = useOutletContext()
 
 	useEffect(() => {
@@ -29,14 +35,29 @@ const ProjectList = () => {
 		}
 	}, [activeProjectIndex])
 
-	function handleClick(project, index) {
+	function handleSelectProject(project, index) {
 		setActiveProjectIndex((currentIndex) => {
 			return currentIndex !== null && currentIndex === index ? null : index
 		})
 	}
 
+	function handleAddNew() {
+		showModal()
+	}
+
+	function test(value) {
+		console.log("Submitted value: ", value)
+	}
+
 	return (
-		<div>
+		<>
+			<div
+				className='bg-blue-600 inline-flex text-white gap-4 p-2 px-4 rounded-3xl cursor-pointer'
+				onClick={handleAddNew}>
+				<p>Add new</p>
+				<img src={plus} alt='' className='object-contain' />
+			</div>
+
 			<Table className='mt-8'>
 				<TableHeader>
 					<TableRow className='font-[500]'>
@@ -53,7 +74,8 @@ const ProjectList = () => {
 				<TableBody>
 					{projects.map((proj, index) => (
 						<TableRow
-							onClick={() => handleClick(proj, index)}
+							key={index}
+							onClick={() => handleSelectProject(proj, index)}
 							className={`cursor-pointer ${activeProjectIndex === index ? "bg-blue-100" : ""}`}>
 							<TableCell className='text-center'>{index + 1}</TableCell>
 							<TableCell>{proj.dateOfIssue}</TableCell>
@@ -69,7 +91,11 @@ const ProjectList = () => {
 					))}
 				</TableBody>
 			</Table>
-		</div>
+
+			<CustomModal title='Add New Project' modalProps={modalProps} className='min-w-[600px]'>
+				<ProjectForm form={form} initialValues={null} />
+			</CustomModal>
+		</>
 	)
 }
 
