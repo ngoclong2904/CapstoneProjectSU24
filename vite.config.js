@@ -15,4 +15,20 @@ export default defineConfig({
 			"@utils": path.resolve(__dirname, "./src/utils"),
 		},
 	},
+	build: {
+		outDir: "dist",
+		rollupOptions: {
+			output: {
+				manualChunks: undefined,
+				entryFileNames: "assets/[name].[hash].js",
+				chunkFileNames: "assets/[name].[hash].js",
+				assetFileNames: "assets/[name].[hash].[ext]",
+			},
+		},
+	},
+	server: {
+		mimeTypes: {
+			"application/javascript": ["js"],
+		},
+	},
 })
