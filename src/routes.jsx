@@ -30,7 +30,7 @@ import Adminlayout from "./layout/Adminlayout"
 
 const router = createBrowserRouter([
 	{
-		path: "/",
+		path: "/app",
 		element: <App />,
 	},
 	{
@@ -99,7 +99,7 @@ const router = createBrowserRouter([
 		element: <SignUp />,
 	},
 	{
-		path: "/home",
+		path: "/",
 		element: <DefaultLayout />,
 		children: [
 			{ index: true, element: <Home /> },
