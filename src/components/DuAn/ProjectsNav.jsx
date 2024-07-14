@@ -3,9 +3,9 @@ import { NavLink } from "react-router-dom"
 
 import "./ProjectsNav.scss"
 
-const ProjectsNav = () => {
+const ProjectsNav = ({ disabled }) => {
 	return (
-		<div className='flex gap-10 my-8' id='project-nav'>
+		<div className={`flex gap-10 my-8 ${disabled ? "disabled" : ""}`} id='project-nav'>
 			<NavLink to={"general"}>General</NavLink>
 			<NavLink to={"lich-su"}>Lịch sử thực hiện</NavLink>
 			<NavLink to={"lich-thanh-toan"}>Lịch thanh toán dự kiến</NavLink>

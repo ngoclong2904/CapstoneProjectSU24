@@ -12,10 +12,9 @@ const DuAn = () => {
 				<div className='h-[1px] bg-[#bec6c9] w-[98%] mx-auto my-4'>&nbsp;</div>
 			</div>
 
-			{/* {showNavbar && } */}
-			<ProjectsNav />
+			<ProjectsNav disabled={!showNavbar} />
 
-			<Outlet />
+			<Outlet context={{ setShowNavbar }} />
 		</div>
 	)
 }

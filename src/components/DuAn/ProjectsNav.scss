@@ -8,4 +8,13 @@
 			text-decoration: underline;
 		}
 	}
+
+	&.disabled {
+		cursor: not-allowed;
+		a {
+			opacity: 0.5;
+			pointer-events: none;
+			color: #6b7280; /* Equivalent to Tailwind's text-gray-500 */
+		}
+	}
 }
