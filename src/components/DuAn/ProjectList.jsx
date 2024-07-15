@@ -9,7 +9,7 @@ import useModalHook from "@components/ModalHook/useModalHook"
 const ProjectList = () => {
 	const [projects, setProjects] = useState([])
 	const [activeProjectIndex, setActiveProjectIndex] = useState(null)
-	const { showModal, modalProps, form } = useModalHook({ onSubmit: test })
+	const { showModal, modalProps, form } = useModalHook({ onSubmit: handleAddNewProject })
 
 	const { setShowNavbar } = useOutletContext()
 
@@ -41,19 +41,39 @@ const ProjectList = () => {
 		})
 	}
 
-	function handleAddNew() {
-		showModal()
+	async function handleAddNewProject(newProject) {
+		try {
+			const formData = new FormData()
+			Object.keys(newProject).forEach((key) => {
+				formData.append(key, newProject[key])
+			})
+
+			const response = await fetch("https://realestateproject.azurewebsites.net/api/Projects/AddNewProject", {
+				method: "POST",
+				body: formData,
+			})
+
+			if (!response.ok) {
+				throw new Error(`HTTP error! status: ${response.status}`)
+			}
+
+			// Assuming the response is JSON. Adjust if it returns other content types.
+			const data = await response.json()
+			console.log("Project added successfully:", data)
+		} catch (error) {
+			console.error("Error fetching data: ", error)
+		}
 	}
 
-	function test(value) {
-		console.log("Submitted value: ", value)
+	function handleEdit() {
+		console.log("Edit")
 	}
 
 	return (
 		<>
 			<div
 				className='bg-blue-600 inline-flex text-white gap-4 p-2 px-4 rounded-3xl cursor-pointer'
-				onClick={handleAddNew}>
+				onClick={() => showModal()}>
 				<p>Add new</p>
 				<img src={plus} alt='' className='object-contain' />
 			</div>
@@ -66,8 +86,8 @@ const ProjectList = () => {
 						<TableHead>Tên dự án</TableHead>
 						<TableHead>Loại dự án</TableHead>
 						<TableHead>Địa chỉ</TableHead>
-						<TableHead className='text-center'>Nơi cấp</TableHead>
 						<TableHead className='text-center'>Status</TableHead>
+						<TableHead className='text-center'>Nơi cấp</TableHead>
 						<TableHead className='text-center'>Action</TableHead>
 					</TableRow>
 				</TableHeader>
@@ -78,15 +98,23 @@ const ProjectList = () => {
 							onClick={() => handleSelectProject(proj, index)}
 							className={`cursor-pointer ${activeProjectIndex === index ? "bg-blue-100" : ""}`}>
 							<TableCell className='text-center'>{index + 1}</TableCell>
-							<TableCell>{proj.dateOfIssue}</TableCell>
+							<TableCell>
+								{new Date(proj.dateOfIssue).toLocaleDateString("en-GB", {
+									day: "2-digit",
+									month: "2-digit",
+									year: "numeric",
+								})}
+							</TableCell>
 							<TableCell>{proj.projectName}</TableCell>
 							<TableCell>{proj.typeOfProject}</TableCell>
 							<TableCell>{proj.address}</TableCell>
-							<TableCell className='text-center'>{proj.placeofIssue}</TableCell>
 							<TableCell className='text-center'>
 								<p className={`bg-green-200 text-green-600 rounded-lg p-1 `}>Active</p>
 							</TableCell>
-							<TableCell className='text-center'>...</TableCell>
+							<TableCell className='text-center'>{proj.placeofIssue}</TableCell>
+							<TableCell className='text-center' onClick={handleEdit}>
+								<p className='bg-orange-200 text-orange-600 rounded-lg p-1 '>Edit</p>
+							</TableCell>
 						</TableRow>
 					))}
 				</TableBody>

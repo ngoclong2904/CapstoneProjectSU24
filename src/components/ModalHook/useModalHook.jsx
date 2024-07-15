@@ -12,7 +12,7 @@ const useModalHook = ({ onSubmit }) => {
 	const handleOk = () => {
 		form.validateFields()
 			.then((values) => {
-				form.resetFields()
+				// form.resetFields()
 				onSubmit(values)
 				setIsModalVisible(false)
 			})
